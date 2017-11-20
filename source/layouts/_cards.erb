@@ -1,0 +1,22 @@
+<h1>Here are our cities</h1>
+<% cities = %w(tokyo amsterdam london paris) %>
+
+<div class="container">
+  <div class="row">
+    <% cities.each do |city| %>
+    <div class="col-md-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+      url('https://kitt.lewagon.com/placeholder/cities/<%= city %>');">
+      <div class="card-category"></div>
+      <div class="card-description">
+        <h2>Le Wagon <%= city.capitalize %></h2>
+        <p><%= city.capitalize %></p>
+        <p>Very cool city, the best</p>
+      </div>
+      <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+      <a class="card-link" href="#" ></a>
+      </div>
+   </div>
+   <% end %>
+  </div>
+</div>
